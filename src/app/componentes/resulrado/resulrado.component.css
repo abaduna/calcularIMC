@@ -1,0 +1,30 @@
+.titulo{
+    font-size: 25px;
+    color: aliceblue;
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.fondoitem{
+    background-color: rgba(162, 169, 39, 0.623);
+    border-radius: 20px;
+    color: aliceblue;
+    height: 430px;
+    
+}
+.resultado{
+    color: rgb(255, 230, 0);
+    font-size: 18;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.estilonumeor{
+    font-size: 80px;
+    font-weight: 900;
+    padding:24px;
+    padding-bottom: 120px;
+}
+.interpretacion{
+    font-size: 18px;
+}

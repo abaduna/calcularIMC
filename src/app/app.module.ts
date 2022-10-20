@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
-import { RouterTestingModule } from '@angular/router/testing';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,8 +17,7 @@ import { ResulradoComponent } from './componentes/resulrado/resulrado.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
-    
+  
     
     
     
