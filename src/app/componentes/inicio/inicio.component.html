@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 offset-lg-4">
+            <h2 class="tituelo">BMW CALCULATOR para {{sexo}}</h2>
+            <div class="row">
+                <div class="col lg-5 "   >
+                    <div class="fondo "     [ngClass]="{'sexoActivado' :  sexo === 'masculino' } "  style="cursor: pointer ;" (click)="masculino()">
+                        <i class="fa-solid icono fa-mars"></i>
+                        <p class="MOSCULINO">MASCULINO</p>
+                    </div>
+                </div>
+                <div class="col lg-5">
+                    <div class="fondo" style="cursor: pointer ;" [ngClass]="{'sexoActivado' :  sexo === 'femenino' } " (click)="femenino()">
+                        <i class="fa-solid fa-venus icono"></i>
+                        <P class="MOSCULINO" >Femenino</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 mt-3">
+                <div class="fondo">
+                    <div class="contenedor ">
+                        <p class="altura">altura</p>
+                        <p class="numero "><b>{{altura}}</b> <span>Cm</span></p>
+                        <input type="range" [value]="altura"  (input)="cambiarAltura($event)" min="120" max="220" class="form-range" id="customRange1">
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col lg-5">
+                    <div class="fondo">
+                        <div class="container">
+                            <p class="number">Peso</p>
+                            <div class="numero number ">
+                                {{peso}}
+                            </div>
+                            <div class="botones">
+                                <i class="fa-solid fa-minus" (click)="peso=peso-1"></i>
+                                <i class="fa-solid fa-plus" (click)="peso=peso+1" ></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col lg-5">
+                    <div class="fondo">
+                        <div class="container">
+                            <p class="number">Edad</p>
+                            <div class="numero number ">
+                                {{edad}}
+                                <div class="botones">
+                                    <i class="fa-solid fa-minus" (click)="edad=edad-1"></i>
+                                    <i class="fa-solid fa-plus"(click)="edad=edad+1"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <button class="btn btn-primary">Calcular</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
