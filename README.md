@@ -1,4 +1,5 @@
-# Mic
+# Mic![Captura desde 2022-10-20 14-10-26](https://user-images.githubusercontent.com/64230830/197014330-a84dd643-eda7-4f92-8116-5c61a41545ef.png)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
